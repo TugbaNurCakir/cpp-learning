@@ -47,8 +47,8 @@ int cevre_hesaplama(int kenar1, int kenar2){
     return cevre;
 }
 
-int main(){
-    
+
+   /*
     int kenar1,kenar2;
     do {
         
@@ -62,7 +62,8 @@ int main(){
     cout << "Dikdörtgenin cevresi:  "<< cevre_hesaplama(kenar1, kenar2) << endl;
     cout << "Dikdörtgenin alani  :  "<< alan_hesaplama(kenar1, kenar2) << endl;
 
-}
+
+*/
 
 //--------
 
@@ -75,7 +76,7 @@ int main(){
     
     return ortalama;
 }
-int main(){
+/*
     int a,b;
     
     do {
@@ -89,8 +90,8 @@ int main(){
     int ort = not_ort_hesaplama(a, b);
     cout << "Ortalamaniz : " << ort << endl;
  
- 
-}
+*/ 
+
 //-------
 
 //Fonksiyon kullanarak Vize(yuzde 40i etkiliyor) ve Final(yuzde 60i etkiliyor) notu girilen öğrencinin ortalamasını hesaplayan program.
@@ -101,8 +102,7 @@ double ort_hesaplama(int vize_notu, int final_notu){
     return ortalama;
     
 }
-int main(){
-    
+/*
     int a,b;
     
     do {
@@ -114,9 +114,9 @@ int main(){
     
     int sonuc = ort_hesaplama(a, b);
     cout << "Ortalamaniz: " << sonuc << endl;
+    */
     
-    
-}
+
 
 //----
 
@@ -138,8 +138,7 @@ bool asal_bulma(int sayi){
         return false;
     
 }
-int main(){
-    
+/*
     int aranan_sayi;
     do {
         cout << "Asal olup olmadıgnı bulmak istediginiz sayiyi giriniz.: ";
@@ -153,7 +152,7 @@ int main(){
     else
         cout << "sayi asal degildir" << endl;
     
-}
+*/
 
 //-----
 
@@ -169,7 +168,7 @@ bool tek_cift_bulma(int sayi){
         return false;
 }
 
-int main(){
+/*
     
     int aranan_sayi;
     cout << "Kontrol etmek istediginiz sayiyi giriniz.: " ;
@@ -183,7 +182,7 @@ int main(){
     
     
     
-}
+*/
 //-----
 
 //Fonksiyonlari kullanarak kullanicidan 10 adet sayi isteyerek girilen bu sayilardan kacar adet oldugunu bulan program.
@@ -197,8 +196,7 @@ bool tek_cift_bulma(int sayi){
         return false;
     
 }
-int main(){
-    
+/*
     int sayi;
     int tek_adedi=0,cift_adedi=0;
     for (int i=1; i<=10; i++) {
@@ -217,5 +215,5 @@ int main(){
     cout << "Girdiginiz sayilardan su kadari tektir: " << tek_adedi << endl;
 
     
-}
-------
+*/
+//------
