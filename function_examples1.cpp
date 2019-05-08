@@ -16,21 +16,8 @@ double bolme_islemi(double sayi1, double sayi2){
     return sayi1/sayi2;
 
 }
-int main() {
-    double sayi1, sayi2;
-    cout << "Birinci sayiyi giriniz: " ;
-    cin>> sayi1;
-    cout << "Ikinci sayiyi giriniz: ";
-    cin>> sayi2;
+// Fonksiyon kullanarak dikdörtgenin alanını ve çevresini hesaplayan program.
     
-    cout << "Toplama isleminin sonucu: " << toplama_islemi(sayi1, sayi2) << endl;
-    cout << "Cikarma isleminin sonucu: " << cikarma_islemi(sayi1, sayi2) << endl;
-    cout << "Carpma isleminin sonucu: " << carpma_islemi(sayi1, sayi2) << endl;
-    cout << "Bolme isleminin sonucu: " << bolme_islemi(sayi1, sayi2) << endl;
-    
-    
-    // Fonksiyon kullanarak dikdörtgenin alanını ve çevresini hesaplayan program.
-    /*
     
     int alan_hesaplama(int kenar1, int kenar2){
 
@@ -44,6 +31,77 @@ int cevre_hesaplama(int kenar1, int kenar2){
     cevre = (kenar2 + kenar1) *2;
     return cevre;
 }
+
+// Fonksiyon kullanarak girilen iki sınav notunun ortalamasını hesaplayan program.
+
+ double not_ort_hesaplama(double not1, double not2){
+    double ortalama;
+    ortalama = (not1+not2) / 2;
+    
+    return ortalama;
+}
+//Fonksiyon kullanarak Vize(yuzde 40i etkiliyor) ve Final(yuzde 60i etkiliyor) notu girilen öğrencinin ortalamasını hesaplayan program.
+
+double ort_hesaplama(int vize_notu, int final_notu){
+    double ortalama;
+    ortalama = (vize_notu * 0.4) + (final_notu * 0.6);
+    return ortalama;
+    
+}
+// asal bulan program.
+    
+    bool asal_bulma(int sayi){
+
+    int sayac=0;
+    for (int i=2; i<sayi; i++) {
+        if (sayi % i == 0) {
+            sayac++;
+            break;
+        }
+        
+    }
+    if (sayac==0)
+        return true;
+    else
+        return false;
+    
+}
+// Fonksiyon kullanarak girilen sayının tek veya cift sayi oldugunu bulan program.
+
+bool tek_cift_bulma(int sayi){
+    if (sayi % 2 == 0) {
+        return true;
+    }
+    else
+        return false;
+}
+//Fonksiyonlari kullanarak kullanicidan 10 adet sayi isteyerek girilen bu sayilardan kacar adet oldugunu bulan program.
+
+bool tek_cift_bulma(int sayi){
+    
+    if (sayi % 2 == 0) {
+        return true;
+    }
+    else
+        return false;
+    
+}
+
+int main() {
+    double sayi1, sayi2;
+    cout << "Birinci sayiyi giriniz: " ;
+    cin>> sayi1;
+    cout << "Ikinci sayiyi giriniz: ";
+    cin>> sayi2;
+    
+    cout << "Toplama isleminin sonucu: " << toplama_islemi(sayi1, sayi2) << endl;
+    cout << "Cikarma isleminin sonucu: " << cikarma_islemi(sayi1, sayi2) << endl;
+    cout << "Carpma isleminin sonucu: " << carpma_islemi(sayi1, sayi2) << endl;
+    cout << "Bolme isleminin sonucu: " << bolme_islemi(sayi1, sayi2) << endl;
+    
+    // Fonksiyon kullanarak dikdörtgenin alanını ve çevresini hesaplayan program.
+    
+    /*
     int kenar1,kenar2;
         do {
 
@@ -58,15 +116,9 @@ int cevre_hesaplama(int kenar1, int kenar2){
         cout << "Dikdörtgenin alani  :  "<< alan_hesaplama(kenar1, kenar2) << endl;
 
 }
+*/
 
 // Fonksiyon kullanarak girilen iki sınav notunun ortalamasını hesaplayan program.
-
- double not_ort_hesaplama(double not1, double not2){
-    double ortalama;
-    ortalama = (not1+not2) / 2;
-    
-    return ortalama;
-}
 /*
     int a,b;
     
@@ -84,14 +136,8 @@ int cevre_hesaplama(int kenar1, int kenar2){
 */ 
     
 //Fonksiyon kullanarak Vize(yuzde 40i etkiliyor) ve Final(yuzde 60i etkiliyor) notu girilen öğrencinin ortalamasını hesaplayan program.
-/*
-double ort_hesaplama(int vize_notu, int final_notu){
-    double ortalama;
-    ortalama = (vize_notu * 0.4) + (final_notu * 0.6);
-    return ortalama;
-    
-}
 
+/*
     int a,b;
     
     do {
@@ -105,23 +151,8 @@ double ort_hesaplama(int vize_notu, int final_notu){
     cout << "Ortalamaniz: " << sonuc << endl;
     */
     
-/*
-    bool asal_bulma(int sayi){
+// asal bulan program.
 
-    int sayac=0;
-    for (int i=2; i<sayi; i++) {
-        if (sayi % i == 0) {
-            sayac++;
-            break;
-        }
-        
-    }
-    if (sayac==0)
-        return true;
-    else
-        return false;
-    
-}
 /*
     int aranan_sayi;
     do {
@@ -139,14 +170,6 @@ double ort_hesaplama(int vize_notu, int final_notu){
 */
 
 // Fonksiyon kullanarak girilen sayının tek veya cift sayi oldugunu bulan program.
-/*
-bool tek_cift_bulma(int sayi){
-    if (sayi % 2 == 0) {
-        return true;
-    }
-    else
-        return false;
-}
 
 /*
     
@@ -165,16 +188,7 @@ bool tek_cift_bulma(int sayi){
 */
     
 //Fonksiyonlari kullanarak kullanicidan 10 adet sayi isteyerek girilen bu sayilardan kacar adet oldugunu bulan program.
-/*
-bool tek_cift_bulma(int sayi){
-    
-    if (sayi % 2 == 0) {
-        return true;
-    }
-    else
-        return false;
-    
-}
+
 /*
     int sayi;
     int tek_adedi=0,cift_adedi=0;
