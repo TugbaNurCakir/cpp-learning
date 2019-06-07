@@ -30,7 +30,7 @@ int main(int argc, const char * argv[]) {
     
     for (int sayac=0; sayac<15; sayac++) {
         while (first<=last) {
-            mid=(first+last)+2;
+            mid=(first+last)/2;
             if (array[mid]==kontrol_edilecekler_listesi[sayac]) {
                 bulunma_durumu=1;
                 cout<< kontrol_edilecekler_listesi[sayac] << "bulunmaktadır." << endl;
